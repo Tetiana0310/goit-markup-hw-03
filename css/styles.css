@@ -6,6 +6,7 @@
   --third-text-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
   --btn-color: #ffffff;
+  --second-btn-color: #212121;
 }
 
 body {
@@ -202,4 +203,64 @@ body {
 .footer-list:focus,
 .footer-list:hover {
   color: var(--accent-color);
+}
+
+/*-------HEADER PORTFOLIO------*/
+
+.header-item-portfolio {
+  color: var(--accent-color);
+}
+.header-item-portfolio:hover {
+  color: var(--accent-color);
+}
+
+/*--------SAMPLES-------*/
+
+.samples-btn-all {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--btn-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.samples-btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-btn-color);
+  cursor: pointer;
+}
+.samples-btn:focus,
+.samples-btn:hover {
+  color: var(--accent-color);
+}
+/*----------SAMPLES IMAGES-------*/
+
+.samples-images-link:hover,
+.samples-images-link:focus {
+  color: var(--accent-color);
+}
+.samples-images-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--second-title-color);
+}
+.samples-images-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
