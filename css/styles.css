@@ -7,11 +7,13 @@
   --accent-color: #2196f3;
   --btn-color: #ffffff;
   --second-btn-color: #212121;
+  --dark-background-color: #2f303a;
 }
 
 body {
   font-family: Roboto, sans-serif;
-  font-style: normal;
+  letter-spacing: 0.03em;
+  background-color: #ffffff;
 }
 .list {
   list-style: none;
@@ -32,13 +34,13 @@ body {
   margin: -1px;
 }
 /* ----------HEADER-------*/
+
 .logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: #000000;
 }
 .logo-color {
@@ -46,8 +48,10 @@ body {
 }
 .header-item-studio {
   color: var(--accent-color);
+  font-weight: 500;
 }
-.header-item-studio:hover {
+.header-item-studio:hover,
+.header-item-studio:focus {
   color: var(--accent-color);
 }
 .header-item {
@@ -57,11 +61,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--second-title-color);
 }
-.header-item:focus {
-  color: var(--accent-color);
-}
-.header-contact-list:focus,
-.header-contact-list:hover {
+
+.header-mail:focus,
+.header-mail:hover,
+.header-tel:focus,
+.header-tel:hover {
   color: var(--accent-color);
 }
 
@@ -70,7 +74,7 @@ body {
   font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
+  color: var(--main-text-color);
 }
 .header-tel {
   font-weight: 500;
@@ -82,7 +86,7 @@ body {
 
 /* ----------HERO-------*/
 .hero-section {
-  background-color: #2f303a;
+  background-color: var(--dark-background-color);
 }
 .hero-section-title {
   font-weight: 900;
@@ -98,24 +102,21 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  color: var(--btn-color);
-  background-color: var(--accent-color);
+  color: var(--accent-color);
   cursor: pointer;
+  border: none; bo
 }
 .hero-section-btn:hover,
 .hero-section-btn:focus {
-  color: var(--accent-color);
+  color: var(--btn-color);
+  background-color: var(--accent-color);
 }
 /*--------FEATURES-------*/
 .features-subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-title-color);
 }
@@ -123,7 +124,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 /* --------ABOUT US------- */
@@ -132,18 +132,19 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--second-title-color);
 }
 
 /*-------OUR COMMAND-------*/
+.our-command {
+  background-color: #f5f4fa;
+}
 
 .our-command-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--second-title-color);
 }
 .our-command-subtitle {
@@ -151,7 +152,6 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--second-title-color);
 }
 .our-command-text {
@@ -159,21 +159,27 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
 /* --------FOOTER------- */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--dark-background-color);
 }
+
+.footer-mail:focus,
+.footer-mail:hover,
+.footer-tel:focus,
+.footer-tel:hover {
+  color: var(--accent-color);
+}
+
 .footer-logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: #ffffff;
 }
 .footer-adress {
@@ -181,7 +187,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 .footer-mail {
@@ -189,7 +194,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
 .footer-tel {
@@ -197,7 +201,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
 .footer-list:focus,
@@ -242,7 +245,7 @@ body {
 }
 .samples-btn:focus,
 .samples-btn:hover {
-  color: var(--accent-color);
+  color: var(--btn-color); background-color: var(--accent-color);
 }
 /*----------SAMPLES IMAGES-------*/
 
@@ -261,6 +264,5 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
