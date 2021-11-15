@@ -107,10 +107,6 @@ body {
   margin-right: 50px;
 }
 
-.header-item:last-child {
-  margin-right: 0;
-}
-
 .header-mail:focus,
 .header-mail:hover,
 .header-tel:focus,
@@ -138,9 +134,10 @@ body {
 .hero-section {
   background-color: var(--dark-background-color);
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  display: block;
+  padding: 200px 0;
 }
+
 .hero-section-title {
   font-weight: 900;
   font-size: 44px;
@@ -149,7 +146,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
-  margin-bottom: 30px;
+  display: flex;
+  margin: 0 auto;
+  width: 696px;
 }
 .hero-section-btn {
   font-family: inherit;
@@ -162,6 +161,7 @@ body {
   border: none;
   border-radius: 4px;
   background-color: var(--accent-color);
+  margin-top: 30px;
 }
 .hero-section-btn:hover,
 .hero-section-btn:focus {
@@ -196,6 +196,22 @@ body {
   color: var(--main-text-color);
 }
 /* --------ABOUT US------- */
+
+.about-us-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.about-us-list {
+  display: flex;
+  margin-top: 50px;
+  margin-right: -30px;
+}
+
+.about-us-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-right: 30px;
+}
+
 .about-us-title {
   font-weight: 700;
   font-size: 36px;
