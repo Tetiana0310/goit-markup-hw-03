@@ -91,6 +91,8 @@ img {
   line-height: 1.19;
   color: #000000;
   margin-right: 94px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .logo-color {
   color: var(--accent-color);
@@ -100,6 +102,7 @@ img {
   color: var(--accent-color);
   font-weight: 500;
   margin-right: 50px;
+  padding: 32px;
 }
 
 .header-item-portfolio {
@@ -110,6 +113,11 @@ img {
 .header-item-studio:focus {
   color: var(--accent-color);
 }
+
+.header-item:hover,
+.header-item:focus {
+  color: var(--accent-color);
+}
 .header-item {
   font-weight: 500;
   font-size: 14px;
@@ -117,6 +125,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--second-title-color);
   margin-right: 50px;
+  padding: 32px;
 }
 
 .header-mail:focus,
@@ -174,6 +183,7 @@ img {
   border-radius: 4px;
   background-color: var(--accent-color);
   margin-top: 30px;
+  padding: 10px 32px;
 }
 .hero-section-btn:hover,
 .hero-section-btn:focus {
@@ -181,11 +191,12 @@ img {
   background-color: #188ce8;
 }
 /*--------FEATURES-------*/
-
-.features-list {
-  display: flex;
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.features-list {
+  display: flex;
   margin-right: -30px;
 }
 
@@ -200,6 +211,7 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--second-title-color);
+  margin-bottom: 10px;
 }
 .features-text {
   font-weight: 400;
@@ -209,12 +221,16 @@ img {
 }
 /* --------ABOUT US------- */
 
-.about-us-container {
+.about-us {
   padding-bottom: 94px;
 }
+
+.about-us-title {
+  margin-bottom: 50px;
+}
+
 .about-us-list {
   display: flex;
-  margin-top: 50px;
   margin-right: -30px;
 }
 
@@ -232,14 +248,16 @@ img {
 }
 
 /*-------OUR COMMAND-------*/
-.our-command-container {
+.our-command {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.our-command-title {
+  margin-bottom: 52px;
 }
 
 .our-command-list {
   display: flex;
-  margin-top: 52px;
   margin-right: -30px;
 }
 
@@ -270,19 +288,20 @@ img {
   line-height: 1.18;
   text-align: center;
   color: var(--second-title-color);
+  margin-bottom: 10px;
 }
+
 .our-command-text {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   color: var(--main-text-color);
-  margin-top: 10px;
 }
 
 /* --------FOOTER------- */
 
-.footer-container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -305,12 +324,18 @@ img {
   line-height: 1.19;
   color: #ffffff;
 }
+
+.footer-contacts {
+  margin-top: 20px;
+}
+
 .footer-adress {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--second-text-color);
+  margin-bottom: 10px;
 }
 .footer-mail {
   font-style: normal;
@@ -318,23 +343,20 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: var(--third-text-color);
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
 .footer-tel {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--third-text-color);
-  margin-top: 10px;
 }
+
 .footer-list:focus,
 .footer-list:hover {
   color: var(--accent-color);
-}
-
-.footer-list {
-  margin-top: 20px;
 }
 
 /*-------HEADER PORTFOLIO------*/
@@ -348,7 +370,7 @@ img {
 
 /*--------SAMPLES-------*/
 
-.samples-container {
+.samples {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -356,7 +378,9 @@ img {
 .samples-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
+
 .samples-btn-all {
   font-family: inherit;
   font-style: normal;
@@ -371,6 +395,7 @@ img {
   border: none;
   border-radius: 4px;
   margin-right: 8px;
+  padding: 6px 22px;
 }
 
 .samples-btn {
@@ -386,7 +411,9 @@ img {
   border: none;
   border-radius: 4px;
   margin-right: 8px;
+  padding: 6px 22px;
 }
+
 .samples-btn:focus,
 .samples-btn:hover {
   color: var(--btn-color);
@@ -396,7 +423,6 @@ img {
 .samples-images {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
 
   margin-right: -30px;
   margin-bottom: -30px;
@@ -406,11 +432,13 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .cards-content {
   padding-left: 24px;
   padding-right: 24px;
+  border-radius: 1px solid #eeeeee;
 }
 
 .samples-images-link:hover,
